@@ -12,3 +12,26 @@ input[type='email'] {
 label {
   @apply text-sm font-light text-slate-100 mb-1 block;
 }
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+form{
+  height: 70vh;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+form::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+form::-webkit-scrollbar-track {
+  background: #000;        /* color of the tracking area */
+}
+
+form::-webkit-scrollbar-thumb {
+  background-color: red;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #000;  /* creates padding around scroll thumb */
+}
